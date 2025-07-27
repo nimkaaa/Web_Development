@@ -60,3 +60,19 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .textright{
    text-align: right;
 }
+
+.decoration{
+	text-decoration: line-through;
+}
+
+.shadow{
+	text-shadow: 1px 1px 1px #000000;
+}
+
+.uppercase{
+	text-transform: capitalize;
+}
+
+.ident{
+	text-indent: 100px;
+}
