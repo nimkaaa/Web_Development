@@ -76,3 +76,19 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .ident{
 	text-indent: 100px;
 }
+
+.lspace{
+	letter-spacing: 5px;
+}
+
+.wordspace{
+	word-spacing: 10px;
+}
+
+.white{
+	white-space: normal;
+}
+
+.height{
+	line-height: 2;
+}
