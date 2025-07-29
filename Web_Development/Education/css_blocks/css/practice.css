@@ -38,11 +38,21 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
 .a_block{
-	padding: 10px;
+	display: none;
+	padding: 20px;
+	margin: 20px;
 
-	border: 1px solid #000;
+	border: 2px solid #000;
 }
 
 .a_string{
-	padding: 10px;
+	display: inline-block;
+	padding: 20px;
+	margin: 20px;
+	
+	border: 2px solid #000;
+}
+
+.an_img{
+	max-height: 300px;
 }
