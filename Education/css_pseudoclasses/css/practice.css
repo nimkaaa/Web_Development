@@ -27,7 +27,16 @@ body{
 }
 
 .link{
+	color: blue;
+}
+
+.link:hover{
+	text-decoration: underline;
 	color: red;
+}
+
+.link:visited{
+	color: green;
 }
 
 .textinput{
@@ -47,4 +56,14 @@ body{
 	font-size: 18px;
 	color: #fff;
 	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.textbutton:hover{
+	background-color: #fb16ff;
+}
+
+.list li{
+	font-size: 18px;
+	margin-bottom: 15px;
 }
