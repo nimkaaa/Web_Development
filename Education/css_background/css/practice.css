@@ -38,8 +38,21 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
 body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	height: auto;
 	padding: 30px 30px 200px 30px;
+}
+
+.list{
+	margin-bottom: 50px;
+}
+
+.list li{
+	padding-left: 30px;
+
+	font-size: 24px;
+	margin-bottom: 15px;
+	background: url(../img/emoji.png) left/auto 100% no-repeat;
 }
 
 .block1{
@@ -97,6 +110,6 @@ body{
 	border: 2px solid #000;
 	box-shadow: 0 0 15px #000;
 
-	background: url(../img/airplane.png), url(../img/human.png) bottom left no-repeat, url(../img/games_back.jpg) 0 0 repeat;
+	background: url(../img/airplane.png) top right/25% no-repeat, url(../img/human.png) bottom left no-repeat, url(../img/games_back.jpg) 0 0 repeat;
 
 }
