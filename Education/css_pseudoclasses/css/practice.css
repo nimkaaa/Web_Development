@@ -16,7 +16,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
 body{
-	padding: 30px;
+	height: auto;
+	padding: 30px 30px 300px 30px;
 }
 
 .block p{
@@ -30,14 +31,20 @@ body{
 	color: blue;
 }
 
+.link:visited{
+	color: green;
+}
+
 .link:hover{
 	text-decoration: underline;
 	color: red;
 }
 
-.link:visited{
-	color: green;
+.link:active{
+	color: yellow;
 }
+
+
 
 .textinput{
 	border: 1px solid #666;
@@ -46,6 +53,10 @@ body{
 	font-size: 18px;
 	width: 300px;
 	margin-bottom: 15px;
+}
+
+.textinput:focus{
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 .textbutton{
@@ -60,10 +71,94 @@ body{
 }
 
 .textbutton:hover{
-	background-color: #fb16ff;
+	background-color: #333;
+	color: yellow;
+}
+
+.textbutton:active{
+	background-color: #222;
+}
+
+.list{
+	margin-bottom: 50px;
 }
 
 .list li{
 	font-size: 18px;
 	margin-bottom: 15px;
+}
+
+.list li:first-child{
+	color: purple;
+	font-weight: bold;
+}
+
+.list li:nth-child(3){
+	color: rgb(171, 77, 0);
+	text-shadow: 1px 1px 1px #000;
+}
+
+.list li:last-child{
+	color: green;
+	font-style: italic;
+}
+
+.list2 li{
+	font-size: 18px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+.list2 li:nth-child(even){
+	color: yellow;
+}
+
+.list2 li:nth-child(odd){
+	color: blue;
+}
+
+.divider{
+	border: 1px solid #000;
+}
+
+.text{
+	font-size: 18px;
+	line-height: 24px;
+	margin: 30px 0;
+}
+
+.text:first-line{
+	text-decoration: underline;
+}
+
+.text:first-letter{
+	font-size: 40px;
+	font-weight: bold;
+	color: red;
+	text-shadow: 1px solid #000;
+}
+
+.list3 li{
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.list3 li::before{
+	content: '';
+	background-color: red;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 0 10px 2px 0;
+}
+
+.list3 li:hover::before{
+	background-color: blue;
+	text-decoration: underline;
+}
+
+.list3 li:hover{
+	color: blue;
+	text-decoration: underline;
 }
