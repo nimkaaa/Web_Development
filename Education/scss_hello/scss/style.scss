@@ -1,0 +1,30 @@
+@import "_zeroing";
+
+// -----------------------IMPORTS--------------------------
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 28px;
+	padding: 30px;
+}
+
+.block {
+	text-align: center;
+	p{
+		margin-bottom: 20px;
+	}
+	>p{
+		color: red;
+		font-weight: bold;
+	}
+}
+
+.link {
+	display: inline-block;
+	color: blue;
+	text-decoration: underline;
+	margin-bottom: 20px;
+	&:hover {
+		color: darkblue;
+	}
+}
