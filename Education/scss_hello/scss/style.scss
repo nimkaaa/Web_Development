@@ -2,6 +2,16 @@
 
 // -----------------------IMPORTS--------------------------
 
+$fz: 40px;
+
+%tplborder{
+	border-bottom: 5px dashed purple;
+}
+
+@mixin fontz($fz) {
+	font-size: $fz;
+}
+
 body {
 	font-family: Arial, sans-serif;
 	font-size: 28px;
@@ -9,7 +19,10 @@ body {
 }
 
 .block {
+	width: 300px / 960px * 100%;
+	background-color: #666;
 	text-align: center;
+	margin: 0 auto;
 	p{
 		margin-bottom: 20px;
 	}
@@ -17,14 +30,26 @@ body {
 		color: red;
 		font-weight: bold;
 	}
+	&--big{
+		font-size: 40px
+	}
+
 }
 
 .link {
 	display: inline-block;
 	color: blue;
-	text-decoration: underline;
+	font-size: 20px;
 	margin-bottom: 20px;
 	&:hover {
 		color: darkblue;
 	}
+	.block &{
+		font-size: 80px;
+	}
+	@extend %tplborder;
+}
+
+.link2{
+	@include fontz(100px);
 }
