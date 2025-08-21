@@ -28,9 +28,14 @@ body {
 		}
 
 		&__row {
+         display: flex;
+         justify-content: space-between;
 		}
 
 		&__column {
+         width: 180px;
+
+         text-align: center;
 		}
 }
 
@@ -64,6 +69,18 @@ body {
 .item-about {
 
 		&__icon {
+         position: relative;
+		}
+      &__icon::before {
+         content: '';
+         width: 80px;
+         height: 80px;
+         border: 1px solid #000;
+         border-radius: 50%;
+
+         position: absolute;
+         top: -23px;
+         left: 50px;
 		}
 
 		&__title {
